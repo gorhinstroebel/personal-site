@@ -1,0 +1,6 @@
+.Form1
+{
+    background-image: url("image.jpeg");
+    background-size: cover; /* Adjust this property to control how the image is displayed */
+
+}
