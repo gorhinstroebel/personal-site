@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Classes, JS, Web, WEBLib.Graphics, WEBLib.Controls,
   WEBLib.Forms, WEBLib.Dialogs, Vcl.Controls, Vcl.StdCtrls, WEBLib.StdCtrls,
   WEBLib.ExtCtrls, Graphics, ExtCtrls, Vcl.Imaging.jpeg, Math,
-  Vcl.Imaging.pngimage;
+  Vcl.Imaging.pngimage,uBootstrapIcons, WEBLib.WebCtrls;
 
 type
   TForm1 = class(TWebForm)
@@ -24,6 +24,19 @@ type
     pnlFreelance: TWebPanel;
     pnlFreelanceHead: TWebPanel;
     WebImageControl1: TWebImageControl;
+    phone: TWebHTMLDiv;
+    lblPhoneNumber: TWebLabel;
+    pnlPhoneNumber: TWebPanel;
+    wpEmail: TWebPanel;
+    lblEmail: TWebLabel;
+    email: TWebHTMLDiv;
+    wpLocation: TWebPanel;
+    WebLabel1: TWebLabel;
+    location: TWebHTMLDiv;
+    wpSpace: TWebPanel;
+    pnlWebsite: TWebPanel;
+    lblWebsite: TWebLabel;
+    web: TWebHTMLDiv;
     procedure WebFormCreate(Sender: TObject);
     procedure lblHomeClick(Sender: TObject);
     procedure WebFormShow(Sender: TObject);
@@ -65,6 +78,11 @@ begin
 
   document.body.setAttribute('style',StyleImg);
 
+  phone.HTML.Text := GetBootstrapIcon('telephone-fill', 24, '#576A33');
+  email.HTML.Text := GetBootstrapIcon('envelope-fill', 24, '#576A33');
+  location.HTML.Text := GetBootstrapIcon('geo-alt-fill', 24, '#576A33');
+
+  web.HTML.Text := GetBootstrapIcon('globe', 24, '#576A33');
 end;
 
 procedure TForm1.WebFormResize(Sender: TObject);
