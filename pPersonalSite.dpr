@@ -1,10 +1,10 @@
-program pWebsite;
+program pPersonalSite;
 
 uses
   Vcl.Forms,
   WEBLib.Forms,
   uMain in 'uMain.pas' {Form1: TWebForm} {*.html},
-  uBootstrapIcons in 'Delphi-Bootstrap-Icons\uBootstrapIcons.pas';
+  uBootstrapIcons in 'Lib\Delphi-Bootstrap-Icons\uBootstrapIcons.pas';
 
 {$R *.res}
 

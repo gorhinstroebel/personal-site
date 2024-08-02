@@ -1,0 +1,3 @@
+[submodule "Lib/Delphi-Bootstrap-Icons"]
+	path = Lib/Delphi-Bootstrap-Icons
+	url = https://github.com/shaunroselt/Delphi-Bootstrap-Icons.git
