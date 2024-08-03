@@ -6,9 +6,9 @@ object Form1: TForm1
   OnResize = WebFormResize
   object WebLabel3: TWebLabel
     Left = 0
-    Top = 152
+    Top = 80
     Width = 1956
-    Height = 1120
+    Height = 1192
     Align = alClient
     Alignment = taCenter
     Caption = 'Hi. I'#39'm Gorhin.'
@@ -22,6 +22,7 @@ object Form1: TForm1
     Layout = tlCenter
     ParentFont = False
     WidthPercent = 100.000000000000000000
+    ExplicitTop = 152
     ExplicitWidth = 252
     ExplicitHeight = 54
   end
@@ -29,21 +30,20 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 1956
-    Height = 152
+    Height = 80
     Align = alTop
     BorderStyle = bsNone
     ChildOrder = 1
     Color = 3712753
     ShowCaption = False
     TabOrder = 0
-    ExplicitLeft = -8
-    ExplicitTop = -103
     object lblHeader: TWebLabel
       AlignWithMargins = True
       Left = 50
       Top = 0
-      Width = 444
-      Height = 152
+      Width = 223
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 50
       Margins.Top = 0
       Margins.Right = 0
@@ -52,22 +52,22 @@ object Form1: TForm1
       Caption = 'Gorhin Stroebel'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -64
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
       Layout = tlCenter
       ParentFont = False
       WidthPercent = 100.000000000000000000
-      ExplicitLeft = 0
-      ExplicitHeight = 86
+      ExplicitHeight = 45
     end
     object lblHome: TWebLabel
       AlignWithMargins = True
-      Left = 874
+      Left = 1200
       Top = 0
-      Width = 143
-      Height = 152
+      Width = 87
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 50
@@ -77,7 +77,7 @@ object Form1: TForm1
       Caption = 'Home'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -53
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
@@ -85,16 +85,17 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
+      OnMouseLeave = lblHomeMouseLeave
       OnMouseEnter = lblHomeMouseEnter
-      ExplicitLeft = 1544
-      ExplicitHeight = 71
+      ExplicitTop = -3
     end
     object lblLinkedIn: TWebLabel
       AlignWithMargins = True
-      Left = 1067
+      Left = 1337
       Top = 0
-      Width = 197
-      Height = 152
+      Width = 120
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 50
@@ -104,7 +105,7 @@ object Form1: TForm1
       Caption = 'LinkedIn'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -53
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
@@ -112,16 +113,17 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
-      OnMouseEnter = lblHomeMouseEnter
-      ExplicitLeft = 1709
+      OnMouseLeave = lblLinkedInMouseLeave
+      OnMouseEnter = lblLinkedInMouseEnter
       ExplicitTop = -3
     end
     object lblInstagram: TWebLabel
       AlignWithMargins = True
-      Left = 1673
+      Left = 1653
       Top = 0
-      Width = 233
-      Height = 152
+      Width = 142
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 50
@@ -131,7 +133,7 @@ object Form1: TForm1
       Caption = 'Instagram'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -53
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
@@ -139,16 +141,18 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
-      OnMouseEnter = lblHomeMouseEnter
-      ExplicitLeft = 2282
-      ExplicitTop = 488
+      OnMouseLeave = lblInstagramMouseLeave
+      OnMouseEnter = lblInstagramMouseEnter
+      ExplicitLeft = 1522
+      ExplicitHeight = 45
     end
     object lblTwitter: TWebLabel
       AlignWithMargins = True
-      Left = 1314
+      Left = 1507
       Top = 0
-      Width = 158
-      Height = 152
+      Width = 96
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 50
@@ -158,7 +162,7 @@ object Form1: TForm1
       Caption = 'Twitter'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -53
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
@@ -166,16 +170,18 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
-      OnMouseEnter = lblHomeMouseEnter
-      ExplicitLeft = 1748
-      ExplicitTop = -3
+      OnMouseLeave = lblTwitterMouseLeave
+      OnMouseEnter = lblTwitterMouseEnter
+      ExplicitLeft = 1314
+      ExplicitHeight = 45
     end
     object lblMail: TWebLabel
       AlignWithMargins = True
-      Left = 1522
+      Left = 1845
       Top = 0
-      Width = 101
-      Height = 152
+      Width = 61
+      Height = 80
+      Cursor = crHandPoint
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 50
@@ -185,7 +191,7 @@ object Form1: TForm1
       Caption = 'Mail'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -53
+      Font.Height = -32
       Font.Name = 'Segoe UI'
       Font.Style = []
       HeightPercent = 100.000000000000000000
@@ -193,9 +199,10 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
-      OnMouseEnter = lblHomeMouseEnter
-      ExplicitLeft = 1818
-      ExplicitHeight = 71
+      OnMouseLeave = lblMailMouseLeave
+      OnMouseEnter = lblMailMouseEnter
+      ExplicitLeft = 1805
+      ExplicitHeight = 45
     end
   end
 end
