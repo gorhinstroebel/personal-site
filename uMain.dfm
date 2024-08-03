@@ -4,27 +4,27 @@ object Form1: TForm1
   Color = 3712753
   OnCreate = WebFormCreate
   OnResize = WebFormResize
-  object WebLabel3: TWebLabel
+  object lblTestBody: TWebLabel
     Left = 0
     Top = 80
     Width = 1956
     Height = 1192
     Align = alClient
     Alignment = taCenter
-    Caption = 'Hi. I'#39'm Gorhin.'
+    Caption = 'lblTestBody'
     Color = 3712753
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -40
+    Font.Height = -37
     Font.Name = 'Segoe UI'
     Font.Style = []
     HeightPercent = 100.000000000000000000
     Layout = tlCenter
     ParentFont = False
+    WidthStyle = ssAuto
     WidthPercent = 100.000000000000000000
-    ExplicitTop = 152
-    ExplicitWidth = 252
-    ExplicitHeight = 54
+    ExplicitWidth = 186
+    ExplicitHeight = 50
   end
   object WebPanel2: TWebPanel
     Left = 0
@@ -63,7 +63,7 @@ object Form1: TForm1
     end
     object lblHome: TWebLabel
       AlignWithMargins = True
-      Left = 1200
+      Left = 1054
       Top = 0
       Width = 87
       Height = 80
@@ -87,11 +87,12 @@ object Form1: TForm1
       WidthPercent = 100.000000000000000000
       OnMouseLeave = lblHomeMouseLeave
       OnMouseEnter = lblHomeMouseEnter
+      ExplicitLeft = 1200
       ExplicitTop = -3
     end
     object lblLinkedIn: TWebLabel
       AlignWithMargins = True
-      Left = 1337
+      Left = 1191
       Top = 0
       Width = 120
       Height = 80
@@ -113,13 +114,15 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
+      OnClick = lblLinkedInClick
       OnMouseLeave = lblLinkedInMouseLeave
       OnMouseEnter = lblLinkedInMouseEnter
+      ExplicitLeft = 1275
       ExplicitTop = -3
     end
     object lblInstagram: TWebLabel
       AlignWithMargins = True
-      Left = 1653
+      Left = 1618
       Top = 0
       Width = 142
       Height = 80
@@ -141,14 +144,14 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
+      OnClick = lblInstagramClick
       OnMouseLeave = lblInstagramMouseLeave
       OnMouseEnter = lblInstagramMouseEnter
-      ExplicitLeft = 1522
-      ExplicitHeight = 45
+      ExplicitLeft = 1572
     end
-    object lblTwitter: TWebLabel
+    object lblGithub: TWebLabel
       AlignWithMargins = True
-      Left = 1507
+      Left = 1361
       Top = 0
       Width = 96
       Height = 80
@@ -159,7 +162,7 @@ object Form1: TForm1
       Margins.Bottom = 0
       Align = alRight
       AutoSize = False
-      Caption = 'Twitter'
+      Caption = 'Github'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Height = -32
@@ -170,14 +173,14 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
-      OnMouseLeave = lblTwitterMouseLeave
-      OnMouseEnter = lblTwitterMouseEnter
-      ExplicitLeft = 1314
-      ExplicitHeight = 45
+      OnClick = lblGithubClick
+      OnMouseLeave = lblGithubMouseLeave
+      OnMouseEnter = lblGithubMouseEnter
+      ExplicitLeft = 1275
     end
     object lblMail: TWebLabel
       AlignWithMargins = True
-      Left = 1845
+      Left = 1507
       Top = 0
       Width = 61
       Height = 80
@@ -199,10 +202,40 @@ object Form1: TForm1
       ParentFont = False
       WidthStyle = ssAuto
       WidthPercent = 100.000000000000000000
+      OnClick = lblMailClick
       OnMouseLeave = lblMailMouseLeave
       OnMouseEnter = lblMailMouseEnter
-      ExplicitLeft = 1805
-      ExplicitHeight = 45
+      ExplicitLeft = 1477
+      ExplicitTop = 16
+    end
+    object lblSteam: TWebLabel
+      AlignWithMargins = True
+      Left = 1810
+      Top = 0
+      Width = 96
+      Height = 80
+      Cursor = crHandPoint
+      Margins.Left = 0
+      Margins.Top = 0
+      Margins.Right = 50
+      Margins.Bottom = 0
+      Align = alRight
+      AutoSize = False
+      Caption = 'Steam'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -32
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      HeightPercent = 100.000000000000000000
+      Layout = tlCenter
+      ParentFont = False
+      WidthStyle = ssAuto
+      WidthPercent = 100.000000000000000000
+      OnClick = lblSteamClick
+      OnMouseLeave = lblSteamMouseLeave
+      OnMouseEnter = lblSteamMouseEnter
+      ExplicitLeft = 1593
     end
   end
 end

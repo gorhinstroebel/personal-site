@@ -12,11 +12,12 @@ type
     lblHeader: TWebLabel;
     lblHome: TWebLabel;
     WebPanel2: TWebPanel;
-    WebLabel3: TWebLabel;
     lblLinkedIn: TWebLabel;
     lblInstagram: TWebLabel;
-    lblTwitter: TWebLabel;
+    lblGithub: TWebLabel;
     lblMail: TWebLabel;
+    lblTestBody: TWebLabel;
+    lblSteam: TWebLabel;
     procedure WebFormResize(Sender: TObject);
     procedure lblHomeMouseEnter(Sender: TObject);
     procedure WebFormCreate(Sender: TObject);
@@ -25,10 +26,17 @@ type
     procedure lblMailMouseLeave(Sender: TObject);
     procedure lblLinkedInMouseEnter(Sender: TObject);
     procedure lblLinkedInMouseLeave(Sender: TObject);
-    procedure lblTwitterMouseEnter(Sender: TObject);
-    procedure lblTwitterMouseLeave(Sender: TObject);
+    procedure lblGithubMouseEnter(Sender: TObject);
+    procedure lblGithubMouseLeave(Sender: TObject);
     procedure lblInstagramMouseEnter(Sender: TObject);
     procedure lblInstagramMouseLeave(Sender: TObject);
+    procedure lblLinkedInClick(Sender: TObject);
+    procedure lblInstagramClick(Sender: TObject);
+    procedure lblMailClick(Sender: TObject);
+    procedure lblGithubClick(Sender: TObject);
+    procedure lblSteamMouseEnter(Sender: TObject);
+    procedure lblSteamMouseLeave(Sender: TObject);
+    procedure lblSteamClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,6 +60,11 @@ begin
   lblHome.HTML := GetBootstrapIcon('house-fill', '32', 'white');
 end;
 
+procedure TForm1.lblInstagramClick(Sender: TObject);
+begin
+  Application.Navigate('https://www.instagram.com/gorhin_stroebel/', TNavigationTarget.ntBlank);
+end;
+
 procedure TForm1.lblInstagramMouseEnter(Sender: TObject);
 begin
   lblInstagram.HTML := GetBootstrapIcon('instagram', '32', 'lightgrey');
@@ -62,6 +75,11 @@ begin
   lblInstagram.HTML := GetBootstrapIcon('instagram', '32', 'white');
 end;
 
+procedure TForm1.lblLinkedInClick(Sender: TObject);
+begin
+   Application.Navigate('https://www.linkedin.com/in/gorhin-stroebel/', TNavigationTarget.ntBlank);
+end;
+
 procedure TForm1.lblLinkedInMouseEnter(Sender: TObject);
 begin
   lblLinkedIn.HTML := GetBootstrapIcon('linkedin', '32', 'lightgrey');
@@ -70,6 +88,11 @@ end;
 procedure TForm1.lblLinkedInMouseLeave(Sender: TObject);
 begin
   lblLinkedIn.HTML := GetBootstrapIcon('linkedin', '32', 'white');
+end;
+
+procedure TForm1.lblMailClick(Sender: TObject);
+begin
+  Application.Navigate('mailto:me@gorhinstroebel.com', TNavigationTarget.ntBlank);
 end;
 
 procedure TForm1.lblMailMouseEnter(Sender: TObject);
@@ -84,14 +107,34 @@ begin
 end;
 
 
-procedure TForm1.lblTwitterMouseEnter(Sender: TObject);
+procedure TForm1.lblSteamClick(Sender: TObject);
 begin
-  lblTwitter.HTML := GetBootstrapIcon('twitter', '32', 'lightgrey');
+  Application.Navigate('https://steamcommunity.com/id/gorhins/', TNavigationTarget.ntBlank);
 end;
 
-procedure TForm1.lblTwitterMouseLeave(Sender: TObject);
+procedure TForm1.lblSteamMouseEnter(Sender: TObject);
 begin
-  lblTwitter.HTML := GetBootstrapIcon('twitter', '32', 'white');
+  lblSteam.HTML := GetBootstrapIcon('steam', '32', 'lightgrey');
+end;
+
+procedure TForm1.lblSteamMouseLeave(Sender: TObject);
+begin
+  lblSteam.HTML := GetBootstrapIcon('steam', '32', 'white');
+end;
+
+procedure TForm1.lblGithubClick(Sender: TObject);
+begin
+  Application.Navigate('https://github.com/gorhinstroebel', TNavigationTarget.ntBlank);
+end;
+
+procedure TForm1.lblGithubMouseEnter(Sender: TObject);
+begin
+  lblGithub.HTML := GetBootstrapIcon('github', '32', 'lightgrey');
+end;
+
+procedure TForm1.lblGithubMouseLeave(Sender: TObject);
+begin
+  lblGithub.HTML := GetBootstrapIcon('github', '32', 'white');
 end;
 
 procedure TForm1.WebFormCreate(Sender: TObject);
@@ -100,8 +143,9 @@ begin
 //  Test.HTML := GetBootstrapIcon('house', '64');       // Weird as fuck
   lblLinkedIn.HTML := GetBootstrapIcon('linkedin', '32');
   lblInstagram.HTML := GetBootstrapIcon('instagram', '32');
-  lblTwitter.HTML := GetBootstrapIcon('twitter', '32');
+  lblGithub.HTML := GetBootstrapIcon('github', '32');
   lblMail.HTML := GetBootstrapIcon('envelope-fill', '32');
+  lblSteam.HTML := GetBootstrapIcon('steam', '32');
 end;
 
 procedure TForm1.WebFormResize(Sender: TObject);
