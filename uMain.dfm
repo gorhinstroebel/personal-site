@@ -1,42 +1,234 @@
-object Form1: TForm1
-  Width = 1956
-  Height = 1272
+object frmWebsite: TfrmWebsite
+  Width = 2230
+  Height = 1501
   Color = 3712753
   OnCreate = WebFormCreate
   OnResize = WebFormResize
-  object lblTestBody: TWebLabel
+  object sbVWeb: TWebScrollBox
     Left = 0
     Top = 80
-    Width = 1956
-    Height = 1192
+    Width = 2230
+    Height = 1421
     Align = alClient
-    Alignment = taCenter
-    Caption = 'lblTestBody'
-    Color = 3712753
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -37
-    Font.Name = 'Segoe UI'
-    Font.Style = []
-    HeightPercent = 100.000000000000000000
-    Layout = tlCenter
-    ParentFont = False
-    WidthStyle = ssAuto
-    WidthPercent = 100.000000000000000000
-    ExplicitWidth = 186
-    ExplicitHeight = 50
+    BorderColor = clNone
+    BorderStyle = bsNone
+    ChildOrder = 1
+    ScrollBars = ssVertical
+    ExplicitTop = 0
+    ExplicitWidth = 1956
+    ExplicitHeight = 1272
+    object pnlHome: TWebPanel
+      Left = 0
+      Top = 0
+      Width = 2230
+      Height = 49
+      Align = alTop
+      BorderColor = clNone
+      BorderStyle = bsNone
+      ChildOrder = 1
+      Color = 3712753
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -32
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object pnlContact: TWebPanel
+      Left = 0
+      Top = 49
+      Width = 2230
+      Height = 1372
+      Align = alTop
+      BorderColor = clNone
+      BorderStyle = bsNone
+      ChildOrder = 2
+      Color = 3712753
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -32
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      ExplicitTop = 0
+      ExplicitWidth = 1956
+      ExplicitHeight = 1192
+      object pnlContactForm: TWebPanel
+        AlignWithMargins = True
+        Left = 50
+        Top = 50
+        Width = 2130
+        Height = 1272
+        Margins.Left = 50
+        Margins.Top = 50
+        Margins.Right = 50
+        Margins.Bottom = 50
+        Align = alClient
+        Caption = 'pnlContactForm'
+        ChildOrder = 5
+        TabOrder = 0
+        ExplicitWidth = 1234
+        ExplicitHeight = 1184
+        object WebLabel6: TWebLabel
+          AlignWithMargins = True
+          Left = 50
+          Top = 25
+          Width = 2030
+          Height = 45
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'Contact Me'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          WidthPercent = 100.000000000000000000
+          ExplicitWidth = 165
+        end
+        object edtName: TWebEdit
+          AlignWithMargins = True
+          Left = 50
+          Top = 95
+          Width = 2030
+          Height = 50
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          ChildOrder = 1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          Text = 'Your Name'
+          WidthPercent = 100.000000000000000000
+          ExplicitWidth = 1134
+        end
+        object edtEmail: TWebEdit
+          AlignWithMargins = True
+          Left = 50
+          Top = 170
+          Width = 2030
+          Height = 50
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          ChildOrder = 1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          Text = 'Your Email'
+          WidthPercent = 100.000000000000000000
+          ExplicitWidth = 1134
+        end
+        object edtSubject: TWebEdit
+          AlignWithMargins = True
+          Left = 50
+          Top = 245
+          Width = 2030
+          Height = 50
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          ChildOrder = 1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          Text = 'Subject'
+          WidthPercent = 100.000000000000000000
+          ExplicitWidth = 1134
+        end
+        object memoBody: TWebMemo
+          AlignWithMargins = True
+          Left = 50
+          Top = 320
+          Width = 2030
+          Height = 441
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          Lines.Strings = (
+            'Message')
+          ParentFont = False
+          SelLength = 0
+          SelStart = 9
+          WidthPercent = 100.000000000000000000
+          ExplicitLeft = 3
+          ExplicitTop = 344
+          ExplicitWidth = 1181
+        end
+        object btnSendMessage: TWebButton
+          AlignWithMargins = True
+          Left = 50
+          Top = 786
+          Width = 2030
+          Height = 137
+          Margins.Left = 50
+          Margins.Top = 25
+          Margins.Right = 50
+          Margins.Bottom = 0
+          Align = alTop
+          Caption = 'Send Message'
+          ChildOrder = 5
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -32
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          HeightPercent = 100.000000000000000000
+          ParentFont = False
+          WidthPercent = 100.000000000000000000
+          OnClick = btnSendMessageClick
+          ExplicitWidth = 1134
+        end
+      end
+    end
   end
-  object WebPanel2: TWebPanel
+  object pnlNavigation: TWebPanel
     Left = 0
     Top = 0
-    Width = 1956
+    Width = 2230
     Height = 80
     Align = alTop
     BorderStyle = bsNone
     ChildOrder = 1
     Color = 3712753
     ShowCaption = False
-    TabOrder = 0
+    TabOrder = 1
+    ExplicitWidth = 2099
     object lblHeader: TWebLabel
       AlignWithMargins = True
       Left = 50
@@ -63,7 +255,7 @@ object Form1: TForm1
     end
     object lblHome: TWebLabel
       AlignWithMargins = True
-      Left = 1054
+      Left = 1328
       Top = 0
       Width = 87
       Height = 80
@@ -92,7 +284,7 @@ object Form1: TForm1
     end
     object lblLinkedIn: TWebLabel
       AlignWithMargins = True
-      Left = 1191
+      Left = 1465
       Top = 0
       Width = 120
       Height = 80
@@ -122,7 +314,7 @@ object Form1: TForm1
     end
     object lblInstagram: TWebLabel
       AlignWithMargins = True
-      Left = 1618
+      Left = 2038
       Top = 0
       Width = 142
       Height = 80
@@ -151,7 +343,7 @@ object Form1: TForm1
     end
     object lblGithub: TWebLabel
       AlignWithMargins = True
-      Left = 1361
+      Left = 1635
       Top = 0
       Width = 96
       Height = 80
@@ -180,7 +372,7 @@ object Form1: TForm1
     end
     object lblMail: TWebLabel
       AlignWithMargins = True
-      Left = 1507
+      Left = 1781
       Top = 0
       Width = 61
       Height = 80
@@ -210,7 +402,7 @@ object Form1: TForm1
     end
     object lblSteam: TWebLabel
       AlignWithMargins = True
-      Left = 1810
+      Left = 1892
       Top = 0
       Width = 96
       Height = 80

@@ -3,7 +3,7 @@ program pPersonalSite;
 uses
   Vcl.Forms,
   WEBLib.Forms,
-  uMain in 'uMain.pas' {Form1: TWebForm} {*.html},
+  uMain in 'uMain.pas' {frmWebsite: TWebForm} {*.html},
   uBootstrapIcons in 'Lib\Delphi-Bootstrap-Icons\uBootstrapIcons.pas';
 
 {$R *.res}
@@ -11,6 +11,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmWebsite, frmWebsite);
   Application.Run;
 end.
