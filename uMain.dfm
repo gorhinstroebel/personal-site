@@ -14,9 +14,6 @@ object frmWebsite: TfrmWebsite
     BorderStyle = bsNone
     ChildOrder = 1
     ScrollBars = ssVertical
-    ExplicitTop = 0
-    ExplicitWidth = 1956
-    ExplicitHeight = 1272
     object pnlHome: TWebPanel
       Left = 0
       Top = 0
@@ -52,167 +49,326 @@ object frmWebsite: TfrmWebsite
       Font.Style = []
       ParentFont = False
       TabOrder = 1
-      ExplicitTop = 0
-      ExplicitWidth = 1956
-      ExplicitHeight = 1192
-      object pnlContactForm: TWebPanel
-        AlignWithMargins = True
-        Left = 50
-        Top = 50
-        Width = 2130
-        Height = 1272
-        Margins.Left = 50
-        Margins.Top = 50
-        Margins.Right = 50
-        Margins.Bottom = 50
+      object gpnlContact: TWebGridPanel
+        Left = 0
+        Top = 0
+        Width = 2230
+        Height = 1372
         Align = alClient
-        Caption = 'pnlContactForm'
-        ChildOrder = 5
-        TabOrder = 0
-        ExplicitWidth = 1234
-        ExplicitHeight = 1184
-        object WebLabel6: TWebLabel
+        ChildOrder = 1
+        ColumnCollection = <
+          item
+            Value = 50
+          end
+          item
+            Value = 50
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Row = 0
+            Control = pnlContactForm
+          end
+          item
+            Column = 0
+            Row = 0
+            Control = pnlContactSection
+          end>
+        Color = clWhite
+        GridLineColor = clBlack
+        RowCollection = <
+          item
+            Value = 100
+          end>
+        ExplicitLeft = 944
+        ExplicitTop = 16
+        ExplicitWidth = 100
+        ExplicitHeight = 41
+        object pnlContactForm: TWebPanel
           AlignWithMargins = True
-          Left = 50
-          Top = 25
-          Width = 2030
-          Height = 45
+          Left = 2
+          Top = 2
+          Width = 1111
+          Height = 1368
           Margins.Left = 50
-          Margins.Top = 25
+          Margins.Top = 50
           Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          Caption = 'Contact Me'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          ParentFont = False
-          WidthPercent = 100.000000000000000000
-          ExplicitWidth = 165
-        end
-        object edtName: TWebEdit
-          AlignWithMargins = True
-          Left = 50
-          Top = 95
-          Width = 2030
-          Height = 50
-          Margins.Left = 50
-          Margins.Top = 25
-          Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          ChildOrder = 1
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          ParentFont = False
-          Text = 'Your Name'
-          WidthPercent = 100.000000000000000000
-          ExplicitWidth = 1134
-        end
-        object edtEmail: TWebEdit
-          AlignWithMargins = True
-          Left = 50
-          Top = 170
-          Width = 2030
-          Height = 50
-          Margins.Left = 50
-          Margins.Top = 25
-          Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          ChildOrder = 1
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          ParentFont = False
-          Text = 'Your Email'
-          WidthPercent = 100.000000000000000000
-          ExplicitWidth = 1134
-        end
-        object edtSubject: TWebEdit
-          AlignWithMargins = True
-          Left = 50
-          Top = 245
-          Width = 2030
-          Height = 50
-          Margins.Left = 50
-          Margins.Top = 25
-          Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          ChildOrder = 1
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          ParentFont = False
-          Text = 'Subject'
-          WidthPercent = 100.000000000000000000
-          ExplicitWidth = 1134
-        end
-        object memoBody: TWebMemo
-          AlignWithMargins = True
-          Left = 50
-          Top = 320
-          Width = 2030
-          Height = 441
-          Margins.Left = 50
-          Margins.Top = 25
-          Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          Color = clWhite
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          Lines.Strings = (
-            'Message')
-          ParentFont = False
-          SelLength = 0
-          SelStart = 9
-          WidthPercent = 100.000000000000000000
-          ExplicitLeft = 3
-          ExplicitTop = 344
-          ExplicitWidth = 1181
-        end
-        object btnSendMessage: TWebButton
-          AlignWithMargins = True
-          Left = 50
-          Top = 786
-          Width = 2030
-          Height = 137
-          Margins.Left = 50
-          Margins.Top = 25
-          Margins.Right = 50
-          Margins.Bottom = 0
-          Align = alTop
-          Caption = 'Send Message'
+          Margins.Bottom = 50
+          Align = alClient
+          Anchors = []
+          Caption = 'pnlContactForm'
           ChildOrder = 5
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -32
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          HeightPercent = 100.000000000000000000
-          ParentFont = False
-          WidthPercent = 100.000000000000000000
-          OnClick = btnSendMessageClick
-          ExplicitWidth = 1134
+          TabOrder = 0
+          object lblContactFormHeader: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 25
+            Width = 1011
+            Height = 45
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Contact Me'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 165
+          end
+          object edtName: TWebEdit
+            AlignWithMargins = True
+            Left = 50
+            Top = 95
+            Width = 1011
+            Height = 50
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            ChildOrder = 1
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            Text = 'Your Name'
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 2030
+          end
+          object edtEmail: TWebEdit
+            AlignWithMargins = True
+            Left = 50
+            Top = 170
+            Width = 1011
+            Height = 50
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            ChildOrder = 1
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            Text = 'Your Email'
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 2030
+          end
+          object edtSubject: TWebEdit
+            AlignWithMargins = True
+            Left = 50
+            Top = 245
+            Width = 1011
+            Height = 50
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            ChildOrder = 1
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            Text = 'Subject'
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 2030
+          end
+          object memoBody: TWebMemo
+            AlignWithMargins = True
+            Left = 50
+            Top = 320
+            Width = 1011
+            Height = 441
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            Lines.Strings = (
+              'Message')
+            ParentFont = False
+            SelLength = 0
+            SelStart = 9
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 2030
+          end
+          object btnSendMessage: TWebButton
+            AlignWithMargins = True
+            Left = 50
+            Top = 786
+            Width = 1011
+            Height = 137
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Send Message'
+            ChildOrder = 5
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            OnClick = btnSendMessageClick
+            ExplicitWidth = 2030
+          end
+        end
+        object pnlContactSection: TWebPanel
+          AlignWithMargins = True
+          Left = 1117
+          Top = 2
+          Width = 1111
+          Height = 1368
+          Margins.Left = 50
+          Margins.Top = 50
+          Margins.Right = 50
+          Margins.Bottom = 50
+          Align = alClient
+          Anchors = []
+          BorderColor = clNone
+          BorderStyle = bsNone
+          ChildOrder = 5
+          ShowCaption = False
+          TabOrder = 1
+          object lblContactSectionHeader: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 25
+            Width = 1011
+            Height = 45
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Get in Touch'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -32
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            ExplicitTop = 15
+          end
+          object lblContactCaption: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 95
+            Width = 1011
+            Height = 37
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Pop me a message and let'#39's build some cool shit together '#55357#56833
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -27
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 726
+          end
+          object lblLocation: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 157
+            Width = 1011
+            Height = 37
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Location:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -27
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 108
+          end
+          object lblContactNo: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 219
+            Width = 1011
+            Height = 37
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Contact:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -27
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 98
+          end
+          object lblSocials: TWebLabel
+            AlignWithMargins = True
+            Left = 50
+            Top = 281
+            Width = 1011
+            Height = 37
+            Margins.Left = 50
+            Margins.Top = 25
+            Margins.Right = 50
+            Margins.Bottom = 0
+            Align = alTop
+            Caption = 'Social Icons'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -27
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            HeightPercent = 100.000000000000000000
+            ParentFont = False
+            Transparent = False
+            WidthPercent = 100.000000000000000000
+            ExplicitWidth = 138
+          end
         end
       end
     end
@@ -228,7 +384,6 @@ object frmWebsite: TfrmWebsite
     Color = 3712753
     ShowCaption = False
     TabOrder = 1
-    ExplicitWidth = 2099
     object lblHeader: TWebLabel
       AlignWithMargins = True
       Left = 50
